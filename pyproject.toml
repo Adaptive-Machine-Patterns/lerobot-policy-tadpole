@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lerobot-policy-tadpole"
+version = "0.1.0"
+description = "AMP Tadpole as a LeRobot policy: a small vision-language-action model (three fixed cameras, 7-number state, one instruction -> the next 8 joint states)"
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+authors = [{ name = "Andy Whyte, Adaptive Machine Patterns Ltd", email = "amp@adaptive-machine-patterns.com" }]
+requires-python = ">=3.12"
+dependencies = ["lerobot[transformers-dep]>=0.6", "torch"]
+
+[project.optional-dependencies]
+test = ["pytest", "amp-toy-robotics @ git+https://github.com/Adaptive-Machine-Patterns/amp-toy-robotics"]
+
+[project.urls]
+Homepage = "https://adaptive-machine-patterns.com"
+Repository = "https://github.com/Adaptive-Machine-Patterns/lerobot-policy-tadpole"
+Weights = "https://huggingface.co/Adaptive-Machine-Patterns/amp-tadpole-lerobot"
+
+[tool.setuptools.packages.find]
+include = ["lerobot_policy_tadpole*"]

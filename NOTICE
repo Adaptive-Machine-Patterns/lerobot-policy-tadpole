@@ -1,0 +1,17 @@
+lerobot-policy-tadpole
+Copyright 2026 Adaptive Machine Patterns Ltd (registered in England & Wales, no. 15618869)
+
+Licensed under the Apache License, Version 2.0 (LICENSE).
+
+This package plugs into LeRobot (Hugging Face, Apache-2.0,
+https://github.com/huggingface/lerobot) through its public plugin interface;
+it contains no LeRobot code.  Instructions are tokenised with the tokenizer of
+SmolVLM2-500M-Video-Instruct (Hugging Face, Apache-2.0), downloaded by
+LeRobot at run time.
+
+The AMP Tadpole weights are not part of this package.  They are published
+separately under CC BY-NC 4.0, with commercial licences from Adaptive Machine
+Patterns Ltd: https://huggingface.co/Adaptive-Machine-Patterns/amp-tadpole-lerobot
+
+LeRobot and SmolVLM2 are trademarks or names of Hugging Face, Inc.; their
+mention implies no endorsement.
